@@ -3,47 +3,38 @@
 
     <body></body>
 
-    <style>
-
-        a{
-            width: 100vw;
-            height: fit-content;
-        }
-
-    </style>
-
     <script>
 
         const data = [
             {
-                "display_name":"Lars sin side",
+                "display_name":"Lars' side",
                 "relative_url":"lars/index.html"
             },
             {
-                "display_name":"Brage sin side",
+                "display_name":"Brages side",
                 "relative_url":"brage/index.html"
             },
             {
-                "display_name":"kasper sin side",
+                "display_name":"Kaspers side",
                 "relative_url":"kasper/index.html"
             },
             {
-                "display_name":"Kristian sin side",
+                "display_name":"Kristians side",
                 "relative_url":"kristian/index.html"
             },
             {
-                "display_name":"Simon sin side",
+                "display_name":"Simons side",
                 "relative_url":"simon/index.html"
             },
             {
-                "display_name":"Vetle sin side",
+                "display_name":"Vetles side",
                 "relative_url":"vetle/index.html"
             }
         ];
 
         for(let i = 0; i < data.length; i++){
             document.body.innerHTML +=
-            `<a href="${data[i].relative_url}">${data[i].display_name}</a>`;
+            `<h1><a href="${data[i].relative_url}">${data[i].display_name}</a></h1>`;
         }
 
     </script>

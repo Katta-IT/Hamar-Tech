@@ -1,0 +1,45 @@
+#page-title{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#page-content{
+    width: 1000px;
+    height: fit-content;
+    margin: 0 calc(50% - 500px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#page-content .container{
+    width: 240px;
+    height: 260px;
+    padding: 10px 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+    align-items: end;
+    flex-direction: row;
+    box-shadow: 4px 4px 10px #000;
+}
+#page-content .container h1{
+    width: 100%;
+    height: fit-content;
+    color: #fff;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1000px){
+    #page-content{
+        width: 100%;
+        margin: 0;
+    }
+}
