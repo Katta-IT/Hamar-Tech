@@ -34,3 +34,35 @@ body{
     margin: 2px 14px 0;
     font-size: 24px;
 }
+
+#page-content{
+    width: 1000px;
+    height: fit-content;
+    margin: 60px calc(50% - 500px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#page-content img{
+    width: 400px;
+    height: auto;
+    margin: 20px;
+}
+#page-content h1{
+    width: 100%;
+    height: fit-content;
+    font-size: 26px;
+    text-align: center;
+}
+#page-content p{
+    width: fit-content;
+    height: fit-content;
+}
+
+@media screen and (max-width: 1000px){
+    #page-content{
+        width: 100%;
+        margin: 60px 0;
+    }
+}

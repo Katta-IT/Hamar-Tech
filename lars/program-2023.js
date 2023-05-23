@@ -2,6 +2,7 @@ getActivities();
 async function getActivities(){
     const response = await fetch("https://raw.githubusercontent.com/Katta-IT/Hamar-Tech-Backend/main/lars/program.json");
     const data = await response.json();
+    document.getElementById("page-content").innerHTML = "";
     for(let x = 0; x < data.length; x++){
         for(let i = 0; i < data[x].activities.length; i++){
             document.getElementById("page-content").innerHTML +=
