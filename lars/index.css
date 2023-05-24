@@ -49,3 +49,17 @@
     font-style: italic;
     font-size: 22px;
 }
+
+@media screen and (max-width: 1000px){
+    #page-content .text{
+        width: calc(100% - 80px);
+        padding: 0 40px;
+    }
+    #page-content .text *{
+        width: 100%;
+        text-align: center;
+    }
+    #page-content .text p{
+        width: 100%;
+    }
+}
