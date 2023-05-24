@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5E7F8;
+  display: flex;
+  flex-direction: column; /* Organize the body content in a column */
+}
+
+header {
+  height: 100px;
+  background-color: #221025;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Center the logo */
+  align-items: center; /* Center items vertically */
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  left: 106px;
+}
+
+.logo img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.logo-right img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.logo-right {
+  position: absolute; /* Allow positioning relative to the nearest positioned ancestor */
+  right: 50px; /* Adjust as needed */
+}
+
+.navbar {
+  position: fixed;
+  top: 100px; /* height of the header */
+  left: 0;
+  height: calc(100% - 100px); /* Full height minus the header */
+  background-color: #3D0346;
+  width: 200px; /* Adjust as needed */
+  padding: 20px;
+  z-index: 500;
+  overflow-y: auto;
+}
+
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  position: relative;
+  margin-bottom: 10px; /* Adjust the spacing between menu items */
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
+  transition: text-decoration 0.3s ease-in-out; /* Add transition for smooth underline animation */
+}
+
+.navbar ul li a:focus {
+  text-decoration: underline; /* Add underline on focus */
+}
+
+.dropdown {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out; /* Add transition animation */
+}
+
+.dropdown.active {
+  max-height: 500px; /* The maximum height of the dropdown */
+  opacity: 1;
+}
+
+
+.navbar ul li .dropdown li {
+  margin-bottom: 5px; /* Adjust the spacing between dropdown items */
+}
+
+.navbar ul li .dropdown li a {
+  font-size: 12px; /* Adjust the font size as desired */
+}
+
+.pagetext {
+  position: relative; 
+  margin-left: 240px; /* width of the sidebar plus padding */
+  padding: 20px;
+  box-sizing: border-box; /* to include padding and border in the element's total width and height */
+}
+
+.siteheader {
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 400px); /* adjust this as needed to create desired space on both sides */
+  text-align: justify;
+}
+
+.siteheader h1 {
+  color: #000; /* Change text color */
+  font-size: 20px; /* Change font size */
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+}
+
+.siteheader h2 {
+  font-size: 1em; /* Adjust the size as needed */
+  color: #000000; /* Adjust the color as needed */
+  line-height: 1.5; /* This adds some space between lines of text for readability */
+  text-align: justify; /* This aligns the text evenly along both margins */
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+}
+
+.siteheader h3 {
+    color: #000; /* Change text color */
+    font-size: 20px; /* Change font size */
+    font-family: 'JetBrains Mono', monospace;
+    text-align: left;
+  }
+
+  .siteheader h4 {
+    color: #000; /* Change text color */
+    font-size: 16px; /* Change font size */
+    font-family: 'JetBrains Mono', monospace;
+    text-align: left;
+    
+  }
+
+.siteheader p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+
+.teencode {
+  text-align: center;
+}
