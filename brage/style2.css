@@ -1,4 +1,8 @@
 :root {
+    --background: #1b2223;
+    --text: #f4fefd;
+    --box: #3a4f50;
+    --extra: #0ef6cc;
     --dark-blue: #221025;
     --blue: #3D0346;
     --light-blue: #ffffff;
@@ -21,6 +25,37 @@ body {
     align-items: center;
 
     
+}
+
+
+
+.text-center {
+    margin-top:10rem ;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center img {
+    width: 350px; 
+}
+
+.line hr {
+
+    width: 70vw;
+    border: 3px solid #1b2223;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline{
+    display: block;
+    text-align: center;
 }
 
 .code-editor {
@@ -82,13 +117,17 @@ h1 > img {
     border: none;
 }
 
-a {
-    background-color: lime;
-    color: #fff;
-    padding: 0 1.2rem;
-    border-radius: .5rem;
-    text-decoration: none;
-    font-size: 2rem;
-    float: right;
-    cursor: pointer;
+
+
+.ferdig{
+    padding: 10px;
+    font-size: 50px;
+    width: 100%;
+    text-align: center; 
 }
+
+.ferdig a{
+    padding: 5px;
+    background-color: var(--box);
+}
+
