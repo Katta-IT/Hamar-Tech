@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Live Code Editor</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+
+    <div class="code-editor">
+        <div class="code">
+            <div class="html-code">
+                <h1><img src="images/html.png" alt="">HTML</h1>
+                <textarea id="text-html" class="code language-html">
+                  
+                  <div class="content">
+                    <p>
+                      <button class="btn btn-5">Hover me</button>
+                    </p>
+                  </div>
+                  
+                  
+
+
+                  </textarea>
+            </div>
+            <div class="css-code">
+                <h1><img src="images/CSS.png" alt="">CSS</h1>
+<textarea id="css-text">
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    /* Not only black #16161d - https://en.wikipedia.org/wiki/Eigengrau */
+    background-image: linear-gradient(0deg, black, #16161d);
+    font: 700 36px/1 Montserat, sans-serif;
+    letter-spacing: 0.125em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .content {
+    margin: 3em 0 2em;
+  }
+  
+  .btn {
+    background: none;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font: inherit;
+    letter-spacing: inherit;
+    margin: 1em;
+    padding: 1em 2em;
+    text-transform: inherit;
+    transition: color 1s;
+  }
+  
+  .btn-5 {
+    color: lime;
+  }
+  .btn-5:hover {
+    animation: blinds 0.4s linear forwards;
+    background: linear-gradient(0deg, lime 50%, transparent 25%) 0 0/0.5em 0.5em, linear-gradient(0deg, magenta 50%, transparent 50%) 0 0/1em 1em;
+  }
+  
+  @keyframes blinds {
+    100% {
+      background-position: 0 0, 0 -3em;
+      background-size: 0 0, 1em 6em;
+    }
+  }
+  
+  /* OFFTOPIC */
+  .credits {
+      color: #242442;
+      font: 700 14px/1 Montserrat, sans-serif;
+  }
+  .credits a {
+    color: navy;
+    text-decoration: none;
+  }
+
+</textarea>
+            </div>
+            <div class="js-code">
+                <h1><img src="images/js.png" alt="">JS</h1>
+<textarea spellcheck="false" id="js-text">
+
+  
+</textarea>
+            </div>
+        </div>
+        <iframe id="result"></iframe>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+
+
+
+</html>
