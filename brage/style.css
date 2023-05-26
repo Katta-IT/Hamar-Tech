@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+:root {
+  --background: #1b2223;
+  --text: #f4fefd;
+  --box: #3a4f50;
+  --extra: #0ef6cc;
+}
+
+html body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Exo", sans-serif;
+}
+
+.container{
+  z-index: 2;
+}
+
+.header-container img {
+  scale: 0.7;
+  z-index: 2;
+}
+
+.list-container {
+  background-color: var(--box);
+  width: 10rem;
+  border-radius: 1rem;
+  padding-top: 1rem;
+  z-index: 2;
+}
+
+.list-container li {
+  font-size: 40px;
+  list-style: none;
+}
+
+.text-container {
+  text-align: center;
+  z-index: 2;
+}
+
+.text-container h1 {
+  font-size: 35px;
+}
+
+#html-container {
+  text-align: center;
+  z-index: 999999999;
+  position: relative;
+  background-color: var(--box);
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 20rem;
+
+}
+
+#html-container h1 {
+  font-size:60px;
+}
+
+#html-container a {
+  color: var(--text);
+  font-size: 30px;
+}
+
+#html-container p{
+  font-size: 20px;
+}
+
+#css-container {
+  text-align: center;
+  z-index: 999999999;
+  position: relative;
+  background-color: var(--box);
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 20rem;
+
+}
+
+#css-container h1 {
+  font-size:60px;
+}
+
+#css-container a {
+  color: var(--text);
+  font-size: 30px;
+}
+
+#css-container p{
+  font-size: 20px;
+}
+
+#js-container {
+  text-align: center;
+  z-index: 999999999;
+  position: relative;
+  background-color: var(--box);
+  padding: 3rem;
+  border-radius: 1rem;
+  margin-bottom: 20rem;
+
+}
+
+#js-container h1 {
+  font-size:60px;
+}
+
+#js-container a {
+  color: var(--text);
+  font-size: 30px;
+}
+
+#js-container p{
+  font-size: 20px;
+}
+
+/*Knapp nedover*/
+
+body {
+  background-color: #000;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: table;
+}
+section.ok {
+  background-color: #555;
+}
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in 3s;
+  transition: all 0.5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #fff;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  transform: scale(1);
+}
+
+.scroll-down:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+/*Animert bakgrunn*/
+
+.context {
+  width: 100%;
+  position: absolute;
+  top: 50vh;
+}
+
+.context h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+}
+
+.area {
+  background: var(--background);
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  width: 100%;
+  height: 100vh;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400vh;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 200px;
+  background: var(--extra);
+  animation: animate 25s linear infinite;
+  bottom: -200px;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-500vh) rotate(720deg);
+    opacity: 0;
+    border-radius: 30%;
+  }
+}
+
+/** ANIMATIONS */
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
