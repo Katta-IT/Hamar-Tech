@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Live Code Editor</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-center">
+            <img src="Pictures/HT logo hvit (1).png" class="rounded" alt="neger">
+        </div>
+        <div class="line"><hr></div>
+        
+    <div class="headline">
+        <h1>I dette eksempelet har vi en array av tall. Vi bruker array-metoden filter() til å filtrere ut oddetallene, og deretter bruker vi array-metoden map()<br> til å doble hvert oddetall.
+
+            Det som gjør dette eksempelet litt mer avansert er bruken av anonyme funksjonsuttrykk (funksjoner uten navn) som parametere til filter() og map().<br> Disse funksjonene tar hver en callback-funksjon som bestemmer betingelsen for filtreringen og transformasjonen.
+            
+            <br>Til slutt skriver vi ut det resulterende arrayet dobbeltOddetall i nettleserens konsoll ved hjelp av console.log().</h1>
+    </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="code-editor">
+                    <div class="code">
+                        <div class="html-code">
+                            <h1><img src="images/html.png" alt="">HTML</h1>
+                            <textarea id="text-html" class="code language-html">
+                            </textarea>
+                        </div>
+                        <div class="css-code">
+                            <h1><img src="images/CSS.png" alt="">CSS</h1>
+                            <textarea id="css-text">
+                            </textarea>
+                        </div>
+                        <div class="js-code">
+                            <h1><img src="images/js.png" alt="">JS</h1>
+                            <textarea spellcheck="false" id="js-text">
+var tall = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var dobbeltOddetall = tall
+.filter(function(num) {
+return num % 2 !== 0;
+})
+.map(function(num) {
+return num * 2;
+});
+
+console.log(dobbeltOddetall);                              
+                            </textarea>
+                        </div>
+                    </div>
+                    <iframe id="result"></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="ferdig" class="row">
+            <div id="knapp"><a href="https://hamartech.eu/brage/index.html#js-container"><p>Ferdig</p></a></div>
+        </div>
+    </div>
+    <script src="test.js"></script>
+
+</body>
+
+
+
+</html>
