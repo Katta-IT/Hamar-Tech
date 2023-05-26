@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Program</title>
+        <link rel="stylesheet" href="program-site.css">
+        <link rel="icon" href="https://raw.githubusercontent.com/Katta-IT/Hamar-Tech/main/lars/img/logo.svg">
+
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div class="button">
+                <p>
+                    <a href="https://www.hamartech.eu/lars">
+                        Hjem
+                    </a>
+                </p>
+            </div>
+            <div class="button">
+                <p>
+                    <a href="https://www.hamartech.eu/lars/program-2023">
+                        Program
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div id="page-content">
+            <h1>Konsert</h1>
+            <p>
+                I år kommer EDM-gruppa Electron for å spille i Hamar sentrum.
+                De skal spille totalt 11 av sine sanger og skal debutere med sitt nye album "Arts of Electronics".
+            </p>
+            <img src="img/Elton_John_konsert_i_Hamar_HRK_01129_Foto_Skyphoto.no.jpg">
+            <img src="img/Elton_John_konsert_i_Hamar_HRK_01135_Foto_Skyphoto.no.jpg">
+        </div>
+
+        <div id="footer">
+            <p id="credentials"></p>
+            <p id="contact"></p>
+            <p id="socials"></p>
+        </div>
+
+    </body>
+
+    <script>
+        
+        writeFooter();
+        async function writeFooter(){
+            const response = await fetch("https://raw.githubusercontent.com/LarsSK06/LarsSK06/main/mydata.json");
+            const data = await response.json();
+            for(let i = 0; i < data.credentials.length; i++){
+                document.getElementById("credentials").innerHTML += `${data.credentials[i]}<br>`;
+            }
+            for(let i = 0; i < data.contact.length; i++){
+                document.getElementById("contact").innerHTML += `${data.contact[i]}<br>`;
+            }
+            for(let i = 0; i < data.socials.length; i++){
+                document.getElementById("socials").innerHTML += `<a href="${data.socials[i].href}" target="_blank" style="font-style: italic;">${data.socials[i].name}</a><br>`;;
+            }
+        }
+
+    </script>
+
+</html>

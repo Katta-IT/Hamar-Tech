@@ -38,6 +38,7 @@ html body {
 .text-container {
   text-align: center;
   z-index: 2;
+  padding-top: 10rem;
 }
 
 .text-container h1 {
