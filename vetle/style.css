@@ -327,7 +327,7 @@ body{
     justify-content: space-around;
     border-top: 1px var(--main-color) solid;
     height: 250px;
-    bottom: 0px;
+    bottom: -50px;
     
 }
 
@@ -379,4 +379,8 @@ body{
 .some-icon .img4:hover{
     background-color: #c0007a;
     border: 2px solid #c0007a;
+}
+
+.ezFix {
+    height: 100vh;
 }
