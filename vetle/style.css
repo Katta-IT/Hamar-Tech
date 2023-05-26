@@ -326,7 +326,9 @@ body{
     justify-content: space-around;
     border-top: 1px var(--main-color) solid;
     height: 250px;
-	
+
+    top: 100%;
+    
 }
 
 .footer p {
