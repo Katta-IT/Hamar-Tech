@@ -27,9 +27,9 @@
                 <ul>
                     <a href="htmlHead.html" class="dropdown-tekst">HTML Head</a>
                     <a href="htmlTekstelementer.html" class="dropdown-tekst">HTML Tekstelementer</a>
-                    <a href="htmlBilder.html" class="dropdown-tekst">HTML Bilder</a>
-                    <a href="placeholderSide.html" class="dropdown-tekst">Placeholder</a>
-                    <a href="placeholderSide.html" class="dropdown-tekst">Placeholder</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">HTML Bilder</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">Placeholder</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">Placeholder</a>
 
 
                 </ul>
@@ -40,11 +40,11 @@
             <ul class="dropdown">
                 <a>CSS<div class="trekant"></div></a>
                 <ul>
-                    <a href="cssClassogId.html" class="dropdown-tekst">CSS Class og Id</a>
-                    <a href="placeholderSide.html" class="dropdown-tekst">Placeholder</a>
-                    <a href="placeholderSide.html" class="dropdown-tekst">Placeholder</a>
-                    <a href="placeholderSide.html" class="dropdown-tekst">Placeholder</a>
-                    <a href="placeholderSide.html" class="dropdown-tekst">Placeholder</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">CSS Farger</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">CSS Boks-modellen</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">CSS Posisjonering</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">Placeholder</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">Placeholder</a>
 
 
                 </ul>
@@ -55,11 +55,11 @@
             <ul class="dropdown">
                 <a>JavaScript<div class="trekant"></div></a>
                 <ul>
-                    <a href="placeholderSide.html" class="dropdown-tekst">Placeholder</a>
-                    <a href="placeholderSide.html" class="dropdown-tekst">Placeholder</a>
-                    <a href="placeholderSide.html" class="dropdown-tekst">Placeholder</a>
-                    <a href="placeholderSide.html" class="dropdown-tekst">Placeholder</a>
-                    <a href="placeholderSide.html" class="dropdown-tekst">Placeholder</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">JS Variabler</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">Placeholder</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">Placeholder</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">Placeholder</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">Placeholder</a>
 
                 </ul>
             </ul>
@@ -68,17 +68,31 @@
     </section>
 
     <section>
-        <div class="om">
-            <h1>Om HamarTech</h1>
-            <img class="omOssBilde" src="images/HTomOssBilde.jpg">
-            <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. A condimentum vitae sapien pellentesque habitant morbi tristique. Faucibus in ornare quam viverra orci sagittis eu volutpat odio. Accumsan tortor posuere ac ut consequat semper viverra. Tempus urna et pharetra pharetra massa massa. Lorem mollis aliquam ut porttitor leo. Senectus et netus et malesuada fames ac turpis egestas maecenas. Tristique senectus et netus et malesuada fames ac. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Morbi tristique senectus et netus et malesuada fames ac. Orci porta non pulvinar neque laoreet. Tincidunt tortor aliquam nulla facilisi cras. Justo donec enim diam vulputate ut pharetra sit amet. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra.
-            </p>
-            <p class="p2">
-            Volutpat maecenas volutpat blandit aliquam etiam erat velit. Faucibus nisl tincidunt eget nullam non nisi est sit. Gravida rutrum quisque non tellus. Duis at consectetur lorem donec massa sapien faucibus et molestie. Nisl nunc mi ipsum faucibus vitae aliquet nec. Dui nunc mattis enim ut tellus. Ac felis donec et odio. Porttitor massa id neque aliquam vestibulum. Consectetur adipiscing elit ut aliquam purus sit. Massa tincidunt dui ut ornare lectus sit amet est. Nunc aliquet bibendum enim facilisis gravida neque convallis. Semper risus in hendrerit gravida.</p>
-            </p>
- 
+        <div class="tutorial">
+            <h1>CSS Class og Id</h1>
+            <p>Class og Id brukes for å linke til spesielle deler av koden din i CSSen sånn at den spesifikt kan bli nedret på. Du legger det først til sånn her i html-koden din, før du linker til det i CSS-fila ved å skrive .classNavn { og ha cssen i her}.</p>
+            <div class="kodeblokk" id="kodeblokk">
+                <a class="copyKnapp" id="copyKnapp" onclick="copy()">Kopier koden</a>
+                <p>
+                    <span style="color:#2C7AD6"><span style="color:#808080">&lt;</span>p<span style="color:#9CDCFE">
+                        class</span><span style="color:#ffffff">=</span><span
+                        style="color: #CE9178;">"classNavn"</span><span style="color:#808080">&gt;</span></span><span
+                    style="color: white;">Dette dukker opp på nettsiden
+                    din</span><span style="color:#2C7AD6"><span style="color:#808080">&lt;/</span>p<span
+                        style="color:#808080">&gt;</span></span>    
+                </p>
+            </div>
+
+            
+            <xmp class="copyTekst" id="copyTekst" style='padding:0px;margin:0px;white-space:nowrap'>
+<p class="classNavn">Dette dukker opp på nettsiden din</p>
+            </xmp>
+
+            <a class="button" href="compiler.html">Prøv det</a>
+
         </div>
     </section>
+ 
 
     <section class="footer">
 

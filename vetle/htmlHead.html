@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HamarTech Tutorials HTML Head</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <nav>
+                <a href="index.html" class="header-img">
+                    <img id="logo" class="logo" src="images/HT logo hvit.png" alt="logo" />
+                </a>
+            </nav>
+        </div>
+    </section>
+
+    <section>
+        <div class="sidenav" id="sidenav">
+            <ul>
+            <ul class="dropdown">
+                <a>HTML<div class="trekant"></div></a>
+                <ul>
+                    <a href="htmlHead.html" class="dropdown-tekst">HTML Head</a>
+                    <a href="htmlTekstelementer.html" class="dropdown-tekst">HTML Tekstelementer</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">HTML Bilder</a>
+
+                </ul>
+            </ul>
+            
+        </ul>
+        <ul>
+            <ul class="dropdown">
+                <a>CSS<div class="trekant"></div></a>
+                <ul>
+                    <a href="htmlHead.html" class="dropdown-tekst">CSS Farger</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">CSS Boks-modellen</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">CSS Posisjonering</a>
+
+                </ul>
+            </ul>
+          
+        </ul>
+        <ul>
+            <ul class="dropdown">
+                <a>JavaScript<div class="trekant"></div></a>
+                <ul>
+                    <a href="htmlHead.html" class="dropdown-tekst">JS Variabler</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">JS Variabler</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">JS Variabler</a>
+                    <a href="htmlHead.html" class="dropdown-tekst">JS Variabler</a>
+
+                </ul>
+            </ul>
+        </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="tutorial">
+            <h1>Html Head</h1>
+            <p>Det alle nettsider trenger, er en head. Her putter du alt som skal i toppen av fanen som logo
+                og tittel, og dette gjør du med head funksjonen. Head er brukt til å legge til  logo og
+                tittel, og senere til å legge til cripts, link til CSS-filen og metadata og sånt. Dette er det viktigste:</p>
+            <div class="kodeblokk" id="kodeblokk">
+                <a class="copyKnapp" id="copyKnapp" onclick="copy()">Kopier koden</a>
+                <p>
+
+                    <span style="color:#2C7AD6"><span style="color:#808080">&lt;</span>head<span
+                            style="color:#808080">&gt;</span></span>
+                    </br>
+                    </br>
+                    <span style="color:#2C7AD6"><span
+                            style="color:#808080">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>title<span
+                            style="color:#808080">&gt;</span></span><span style="color:#2C7AD6"><span style="color: white;">Navn
+                            på siden her</span><span style="color:#808080">&lt;/</span>title<span
+                            style="color:#808080">&gt;</span></span>
+                    </br>
+                    <span style="color:#2C7AD6"><span
+                            style="color:#808080">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>link<span
+                            style="color:#9CDCFE"> rel</span><span style="color: white">=</span><span
+                            style="color: #CE9178;">"icon"</span><span style="color:#9CDCFE"> href</span><span
+                            style="color: white;">=</span><span style="color: #CE9178;">"link til logo her"</span><span
+                            style="color:#808080">&gt;</span></span>
+                    </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#2C7AD6"><span style="color:#808080">&lt;</span>link<span style="color:#9CDCFE">
+                        rel</span><span style="color: white">=</span><span style="color: #CE9178;">"stylesheet"</span><span style="color:#9CDCFE"> href</span><span
+                        style="color: white;">=</span><span style="color: #CE9178;">"<u>navn på css-fila.css</u>"</span><span
+                        style="color:#808080">&gt;</span></span>
+                </br>
+                    </br>
+                    <span style="color:#2C7AD6"><span style="color:#808080">&lt;/</span>head<span
+                            style="color:#808080">&gt;</span></span>
+        
+                </p>
+            </div>
+
+            
+            <xmp class="copyTekst" id="copyTekst" style='padding:0px;margin:0px;white-space:nowrap'>
+<head>
+
+    <title>Navn på siden her</title>
+    <link rel="icon" href="link til logo her">
+    <link rel="stylesheet" href="navn på css-fila.css">
+
+</head>
+            </xmp>
+
+            <a class="button" href="compiler.html">Prøv det</a>
+
+        </div>
+    </section>
+        <section class="footer">
+
+            <div>
+                <p>
+                    <a id="kontaktHead">Kontakt oss</a>
+                    </br>
+                    </br>
+                    Telefon:
+                    </br> 
+                    +47 99 99 99 99
+                    </br>
+                    </br> 
+                    Postadresse:
+                    </br>
+                    Postboks 1111
+                    1111 Hamar
+                    </br></br>
+                    E-post:
+                    </br>   
+                    postmottak@hamartech.no
+                </p> 
+            </div>
+            <div>
+                <p>
+                    copyright 2023
+                </br>
+                Laget av Vetle Lindbråten
+                </p>
+            </div>
+            <div>
+                <p>
+                    <a id="kontaktHead">Sosiale medier</a>
+                    </br>
+                    <a href="https://www.facebook.com/hamarkommune" class="some-icon">
+                        <img class="img1" src="Images/facebookLogo.png">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCw7dmjYMidZ4hqZqlzPlN5A" class="some-icon">
+                        <img class="img2" src="Images/YTLogo.png">
+                    </a>
+                    <a href="https://www.linkedin.com/company/2026480/" class="some-icon">
+                        <img class="img3" src="Images/linkedInLogo.png">
+                    </a>
+                    <a href="https://www.instagram.com/hamar_kommune/" class="some-icon">
+                        <img class="img4" src="Images/instagramLogo.png">
+                    </a>
+                </p>
+                
+            </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
